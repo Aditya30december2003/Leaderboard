@@ -120,7 +120,7 @@ const Leaderboard = () => {
                 <input
                   className='input'
                   type="text"
-                  placeholder="Time (MM:SS:MSS)"
+                  placeholder="Time (HH:MM:SS:MSS)"
                   value={newUser.time}
                   onChange={(e) => setNewUser({ ...newUser, time: e.target.value })}
                 />
