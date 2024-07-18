@@ -39,7 +39,6 @@
   color: #f0f0f0;
 }
 
-/* Adjust existing styles */
 .leaderboard-container {
   flex: 1;
   display: flex;
@@ -163,9 +162,11 @@
   form {
     display: flex;
     flex-direction: column;
+    justify-content: space-evenly;
+    text-align: center;
   }
-  
   input {
+    margin-top: 10px;
     margin-bottom: 10px;
     padding: 5px;
   }
@@ -176,6 +177,7 @@
     color: white;
     border: none;
     cursor: pointer;
+    text-align: center;
   }
   .input{
     outline: none;
@@ -257,7 +259,18 @@
     .footer {
       position: relative;
       overflow: hidden;
-      height: 280px; 
+      height: 200px; 
+    }
+    .leaderboard-container {
+      padding-bottom: 60px; 
+    }
+  }
+
+  @media (max-width: 480px) {
+    .footer {
+      position: relative;
+      overflow: hidden;
+      height: 200px; 
     }
     .leaderboard-container {
       padding-bottom: 60px; 

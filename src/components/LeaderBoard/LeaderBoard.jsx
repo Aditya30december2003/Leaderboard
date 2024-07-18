@@ -109,7 +109,7 @@ const Leaderboard = () => {
           <div className="add-score">
             <h2 className='header2'>Add Score</h2>
             <form onSubmit={handleSubmit}>
-              <div className='form'>
+              <div className='form1'>
                 <input
                   className='input'
                   type="text"
@@ -125,7 +125,7 @@ const Leaderboard = () => {
                   onChange={(e) => setNewUser({ ...newUser, time: e.target.value })}
                 />
               </div>
-              <button type="submit">Add Score</button>
+              <button className='submit' type="submit">Add Score</button>
             </form>
           </div>
         </div>
